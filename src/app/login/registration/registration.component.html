@@ -1,0 +1,210 @@
+<!-- <div class="container bordercls border-primary rounded">
+    <form  [formGroup] ="complexForm" (ngSubmit)="onSubmit(complexForm.value)">
+        <div class="form-group row">
+            <label for="email" class="col-md-2 col-form-label">Email</label>
+            <div class="col-md-10">
+                <input type="email" class="form-control" [ngClass]="{'is-invalid':!complexForm.controls['email'].valid &&  complexForm.controls['email'].touched}" [formControl]="complexForm.controls['email']"  placeholder="Email" required>
+                <div class="invalid-feedback" *ngIf="!complexForm.controls['email'].valid &&  complexForm.controls['email'].touched">
+                    Please enter valid email.
+                  </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-md-2 col-form-label">Reenter Email</label>
+            <div class="col-md-10">
+                <input type="email" class="form-control"  placeholder="Retype Email" required>
+              </div>
+              
+        </div>
+
+        <div class="form-group row">
+            <label for="password" class="col-md-2 col-form-label">Mobile Number</label>
+            <div class="col-md-10">
+                <input type="number" class="form-control"  placeholder="+1 (123) 456-7890"  [ngClass]="{'is-invalid':!complexForm.controls['mobileno'].valid &&  complexForm.controls['mobileno'].dirty}" [formControl]="complexForm.controls['mobileno']" required>
+                <div class="invalid-feedback" *ngIf="!complexForm.controls['mobileno'].valid">
+                    Please enter valid mobile number.
+                  </div>
+            </div>
+        </div>
+
+        
+
+        <div class="form-group row">
+            <label for="select" class="col-md-2 col-form-label">Question1</label>
+            <div class="col-md-10">
+                <select class="custom-select" style="width:100%">
+                    <option selected>Choose Question...</option>  
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="answer" class="col-md-2 col-form-label">Answer 1</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control"  placeholder="answer">
+              </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="select" class="col-md-2 col-form-label">Question2</label>
+            <div class="col-md-10">
+                <select class="custom-select" style="width:100%">
+                    <option selected>Choose Question...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="answer" class="col-md-2 col-form-label">Answer 2</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control"  placeholder="answer">
+              </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col md-2"></div>
+            <div class="col-md-10">
+                <button class="btn btn-outline-primary" type="button">Cancel</button>
+                <button class="btn btn-outline-primary" style="margin:6px;" type="submit"  >Continue<i class="fa fa-android" aria-hidden="true"></i></button>
+              </div>
+        </div>
+
+      
+    </form>
+  </div>  -->
+
+  <div class="container bordercls border-primary rounded" style="margin-top:4px" *ngIf="show">
+    <form>
+          <div class="form-group row">
+              <label for="select" class="col-md-12 col-form-label">Would  you like us to authorize the device ?</label>              
+          </div>
+          <div class="form-group row">
+              <div class="col md-2"></div>
+              <div class="col-md-10">
+                  <input class="form-check-input" type="radio" name="exampleRadios"  value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                      <b>YES</b><span style="margin-left: 7px;">this is a device that i trust and use often</span>
+                    
+                    </label>
+                </div>
+          </div>
+          <div class="form-group row">
+              <div class="col md-2"></div>
+              <div class="col-md-10">
+                  <input class="form-check-input" type="radio" name="exampleRadios"  value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                     
+                      <b>NO</b><span style="margin-left: 7px;">this is a public device (like a Kiosk or personal Computer)</span>
+                    </label>
+                </div>
+          </div>
+    </form>
+  </div>
+
+ <div class="container bordercls border-primary rounded">
+        <form  [formGroup] ="complexForm" (ngSubmit)="onSubmit(complexForm.value)">
+            <div class="form-group row">
+                <label for="email" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" [ngClass]="{'is-invalid':!complexForm.controls['email'].valid &&  complexForm.controls['email'].touched}" [formControl]="complexForm.controls['email']"  placeholder="Email" required>
+                    <div class="invalid-feedback" *ngIf="!complexForm.controls['email'].valid &&  complexForm.controls['email'].touched">
+                        Please enter valid email.
+                      </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-md-2 col-form-label">Reenter Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control"  placeholder="Retype Email" required>
+                  </div>
+                  
+            </div>
+    
+            <div class="form-group row">
+                <label for="password" class="col-md-2 col-form-label">Mobile Number</label>
+                <div class="col-md-10">
+                    <input type="number" class="form-control"  placeholder="+1 (123) 456-7890"  [ngClass]="{'is-invalid':!complexForm.controls['mobileno'].valid &&  complexForm.controls['mobileno'].dirty}" [formControl]="complexForm.controls['mobileno']" required>
+                    <div class="invalid-feedback" *ngIf="!complexForm.controls['mobileno'].valid">
+                        Please enter valid mobile number.
+                      </div>
+                </div>
+            </div>
+    
+            
+    
+            <div class="form-group row">
+                <label for="select" class="col-md-2 col-form-label">Question1</label>
+                <div class="col-md-10">
+                    <select class="custom-select" style="width:100%">
+                        <option selected>Choose Question...</option>  
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="answer" class="col-md-2 col-form-label">Answer 1</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control"  placeholder="answer">
+                  </div>
+            </div>
+    
+    
+            <div class="form-group row">
+                <label for="select" class="col-md-2 col-form-label">Question2</label>
+                <div class="col-md-10">
+                    <select class="custom-select" style="width:100%">
+                        <option selected>Choose Question...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="answer" class="col-md-2 col-form-label">Answer 2</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control"  placeholder="answer">
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <div class="col md-2"></div>
+                <div class="col-md-10">
+                    <button class="btn btn-outline-primary" type="button">Cancel</button>
+                    <button class="btn btn-outline-primary" (click)="onContinue()" style="margin:6px;" type="submit"  >Continue<i class="fa fa-android" aria-hidden="true"></i></button>
+                  </div>
+            </div>
+
+            <div class="form-group row" [@style]="animateState" [@slideInOut] style="border:3px solid black;border-color:green">
+                <textarea class="form-control"></textarea>
+            </div>
+
+            <ul>
+                <li *ngFor ="let list of listData" [@listZoom]="state" (click)="toggleState()">{{list}}</li>
+            </ul>
+           
+    
+            <div @explainerAnim style="border:2px solid black;border-radius: 5px;">
+                <div class="col">
+                  <p>I think Coursetro is one of the best learning resources online for Angular</p>
+                </div>
+                <div class="col">
+                  <p>I think Coursetro is one of the best learning resources online for Angular</p>
+                </div>
+                <div class="col">
+                  <p>I think Coursetro is one of the best learning resources online for Angular</p>
+                </div>
+            </div>
+        </form>
+      </div>

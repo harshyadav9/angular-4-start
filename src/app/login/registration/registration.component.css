@@ -1,0 +1,12 @@
+.bordercls{
+    border:thin solid grey;
+    padding:2rem;
+}
+
+.col {
+    width:33%;
+    display:inline-block;
+    padding:40px 0;
+    color:gray;
+}
+

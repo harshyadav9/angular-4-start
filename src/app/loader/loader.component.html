@@ -1,0 +1,12 @@
+<!-- <div class="loader">
+  
+</div> -->
+
+<div class="loaderContainer" *ngIf="show">
+  <div class="loader fa-3x">
+      <!-- <i class="fas fa-circle-notch fa-spin fa-3x"></i> -->
+      <fa name="spinner" size="3x" animation="spin"></fa>
+  </div>
+  <div class="overlay"></div>
+  <ng-content></ng-content>
+</div>

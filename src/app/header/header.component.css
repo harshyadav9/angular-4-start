@@ -1,0 +1,36 @@
+.logo{
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid #efd0d0; */
+    width: 168px;
+    height: 75px;
+    display: inline-block;
+}
+
+.headerText{
+    display: inline-block;
+    font-family: initial;
+    /* vertical-align: middle; */
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.navbar{
+    padding: 0 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .headerText {
+        display: block;
+        margin-top: 9px;
+        transform: translateX(0%);
+    }
+   
+  };
+
+.navbar-brand>img{
+    width: auto;
+    height:100%;
+    padding: 10px;
+}
